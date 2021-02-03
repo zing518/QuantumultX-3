@@ -1009,12 +1009,12 @@ async function getJdNH() {
   await getActContent(false, shareUuid)
 }
 // jd签到领现金
-async function getJDCase() {
-  const JDCase_API_HOST = 'https://api.m.jd.com/client.action'
+async function getJDCash() {
+  const JDCash_API_HOST = 'https://api.m.jd.com/client.action'
 
   function getUserInfo() {
     return new Promise(resolve => {
-      $.get(taskZZUrl('cash_mob_home'), async (err, resp, data) => {
+      $.get(taskcashUrl('cash_mob_home'), async (err, resp, data) => {
         try {
           if (err) {
             console.log(`${JSON.stringify(err)}`)
@@ -1040,9 +1040,9 @@ async function getJDCase() {
     })
   }
 
-  function taskZZUrl(functionId, body = {}) {
+  function taskcashUrl(functionId, body = {}) {
     return {
-      url: `${JDZZ_API_HOST}?functionId=${functionId}&body=${escape(JSON.stringify(body))}&client=wh5&clientVersion=9.1.0`,
+      url: `${JDCash_API_HOST}?functionId=${functionId}&body=${escape(JSON.stringify(body))}&client=wh5&clientVersion=9.1.0`,
       headers: {
         Cookie: cookie,
         Host: 'api.m.jd.com',
