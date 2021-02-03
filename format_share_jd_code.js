@@ -7,7 +7,7 @@
 ============Quantumultx===============
 [task_local]
 #获取互助码
-20 * 0/1 1,8,16,24 * ? https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/format_share_jd_code.js, tag=获取并提交助力码, img-url=https://raw.githubusercontent.com/yogayyy/task/master/huzhucode.png, enabled=true
+20 * 0/1 1,8,16,24 * ? https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/format_share_jd_code.js, tag=获取并提交助力码, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/lxk0301/jd_get_share_code.png, enabled=true
 
 ================Loon==============
 [Script]
