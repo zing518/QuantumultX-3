@@ -1125,7 +1125,7 @@ async function getShareCodeAndAdd() {
   await getJoy() // CrazyJoy
   await getJdNS() // 年兽
   await getJdNH() // 京东年货
-  await getJDCase() // 京东签到领现金
+  await getJDCash() // 京东签到领现金
   console.log(`======账号${$.index}结束======\n`)
 }
 
