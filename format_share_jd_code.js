@@ -1014,7 +1014,7 @@ async function getJDCash() {
 
   function getUserInfo() {
   return new Promise((resolve) => {
-    $.get(taskUrl("cash_mob_home",), async (err, resp, data) => {
+    $.get(taskcashUrl("cash_mob_home",), async (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
