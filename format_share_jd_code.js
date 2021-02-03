@@ -980,7 +980,6 @@ async function getJdNH() {
                   $.actorUuid = data.data.actorUuid
 
                   if (!info) {
-                    console.log(`您的好友助力码为${$.actorUuid}`)
                     let token = $.actorUuid
                     console.log(
                       `【账号${$.index}（${
