@@ -1115,6 +1115,7 @@ let submit_farm_code = []// 东东农场互助码
 let submit_pet_code = []// 东东萌宠
 let submit_jxfactory_code = []// 京喜工厂互助码
 let submit_ddfactory_code = []// 东东工厂互助码
+let submit_temp_code_sgmh = []// 盲盒闪购互助码
 
 // Commit Code Bot
 let jdcash = []// 京东 签到领现金
@@ -1131,7 +1132,7 @@ function showFormatMsg() {
   console.log(`/submit_pet_code ${submit_pet_code.join('&')}\n`)
   console.log(`/submit_jxfactory_code ${submit_jxfactory_code.join('&')}\n`)
   console.log(`/submit_ddfactory_code ${submit_ddfactory_code.join('&')}\n`)
-  console.log(`/submit_ddfactory_code sgmh ${submit_temp_code_sgmh.join('&')}\n`)
+  console.log(`/submit_temp_code sgmh ${submit_temp_code_sgmh.join('&')}\n`)
 
   console.log(`\n提交机器人 @Commit Code Bot\n`)
   console.log(`/jdcash ${jdcash.join('&')}\n`)
