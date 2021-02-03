@@ -7,17 +7,17 @@
 ============Quantumultx===============
 [task_local]
 #获取互助码
-20 * 0/1 1,8,16,24 * ? https://gitee.com/qq34347476/quantumult-x/raw/master/format_share_jd_code.js, tag=获取并提交助力码, img-url=https://raw.githubusercontent.com/yogayyy/task/master/huzhucode.png, enabled=true
+20 * 0/1 1,8,16,24 * ? https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/format_share_jd_code.js, tag=获取并提交助力码, img-url=https://raw.githubusercontent.com/yogayyy/task/master/huzhucode.png, enabled=true
 
 ================Loon==============
 [Script]
-cron "20 * 0/1 1,8,16,24 * ?" script-path=https://gitee.com/qq34347476/quantumult-x/raw/master/format_share_jd_code.js, tag=获取并提交助力码
+cron "20 * 0/1 1,8,16,24 * ?" script-path=https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/format_share_jd_code.js, tag=获取并提交助力码
 
 ===============Surge=================
-获取并提交助力码 = type=cron,cronexp="20 * 0/1 1,8,16,24 * ?",wake-system=1,timeout=120,script-path=https://gitee.com/qq34347476/quantumult-x/raw/master/format_share_jd_code.js
+获取并提交助力码 = type=cron,cronexp="20 * 0/1 1,8,16,24 * ?",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/format_share_jd_code.js
 
 ============小火箭=========
-获取并提交助力码 = type=cron,script-path=https://gitee.com/qq34347476/quantumult-x/raw/master/get_share_jd_code.js, cronexpr="0 35 2 1,10,20 * ?", timeout=200, enable=true
+获取并提交助力码 = type=cron,script-path=https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/format_share_jd_code.js, cronexpr="0 35 2 1,10,20 * ?", timeout=200, enable=true
  */
 const $ = new Env("获取助力码");
 const JD_API_HOST = "https://api.m.jd.com/client.action";
@@ -1063,7 +1063,6 @@ let submit_farm_code = []// 东东农场互助码
 let submit_pet_code = []// 东东萌宠
 let submit_jxfactory_code = []// 京喜工厂互助码
 let submit_ddfactory_code = []// 东东工厂互助码
-let submit_zodiac_tempcode = []// 年兽
 
 // Commit Code Bot
 let jdcash = []// 京东 签到领现金
@@ -1080,7 +1079,6 @@ function showFormatMsg() {
   console.log(`/submit_pet_code ${submit_pet_code.join('&')}\n`)
   console.log(`/submit_jxfactory_code ${submit_jxfactory_code.join('&')}\n`)
   console.log(`/submit_ddfactory_code ${submit_ddfactory_code.join('&')}\n`)
-  console.log(`/submit_zodiac_tempcode ${submit_zodiac_tempcode.join('&')}\n`)
 
   console.log(`\n提交机器人 @Commit Code Bot\n`)
   console.log(`/jdcash ${jdcash.join('&')}\n`)
@@ -1097,7 +1095,6 @@ function showFormatMsg() {
   console.log(`jd_pet ${submit_pet_code.join('@')}\n`)
   console.log(`/submit_jxfactory_code ${submit_jxfactory_code.join('@')}\n`)
   console.log(`/submit_ddfactory_code ${submit_ddfactory_code.join('@')}\n`)
-  console.log(`/submit_zodiac_tempcode ${submit_zodiac_tempcode.join('@')}\n`)
   console.log(`/jdcash ${jdcash.join('@')}\n`)
   console.log(`/jdcrazyjoy ${jdcrazyjoy.join('@')}\n`)
   console.log(`/jdnh ${jdnh.join('@')}\n`)
