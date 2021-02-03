@@ -181,6 +181,7 @@ if ($.isNode()) {
   .finally(() => {
     $.done();
   })
+
 // 获取东东工厂助力码
 function getJdFactory() {
   return new Promise(resolve => {
@@ -198,11 +199,8 @@ function getJdFactory() {
                 $.taskVos = data.data.result.taskVos; //任务列表
                 $.taskVos.map((item) => {
                   if (item.taskType === 14) {
-                    const taskToken = item.assistTaskDetailVo.taskToken
-                    console.log(
-                      `【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${taskToken}`
-                      );
-                    let token = taskToken
+                    console.log(`【账号${$.index}（${$.nickName || $.UserName}）东东工厂】${item.assistTaskDetailVo.taskToken}`);
+                    let token = item.assistTaskDetailVo.taskToken
                     submit_ddfactory_code.push(token)
                   }
                 });
@@ -356,6 +354,7 @@ function getJxNc(){
   })
 }
 
+// 获取东东萌宠助力码
 function getJdPet(){
   const JDPet_API_HOST = "https://api.m.jd.com/client.action";
 
@@ -407,10 +406,10 @@ function getJdPet(){
               return;
             }
 
-            console.log(`【账号${$.index}（${$.nickName || $.UserName}）京东萌宠】${$.petInfo.shareCode}`);
+            console.log(`【账号${$.index}（${$.nickName || $.UserName}）东东萌宠】${$.petInfo.shareCode}`);
             let token = $.petInfo.shareCode
             submit_pet_code.push(token)
-
+            
           } else if (initPetTownRes.code === "0") {
             console.log(`初始化萌宠失败:  ${initPetTownRes.message}`);
           } else {
@@ -425,6 +424,7 @@ function getJdPet(){
     });
   })
 }
+// 获取京东赚赚助力码
 async function getJdZZ() {
   const JDZZ_API_HOST = "https://api.m.jd.com/client.action";
 
@@ -474,6 +474,8 @@ async function getJdZZ() {
 
   await getUserInfo()
 }
+
+// 获取种豆得豆助力码
 async function getPlantBean() {
   const JDplant_API_HOST = "https://api.m.jd.com/client.action";
 
@@ -555,6 +557,7 @@ async function getPlantBean() {
 
   await jdPlantBean();
 }
+// 获取东东农场助力码
 async function getJDFruit() {
   async function initForFarm() {
     return new Promise((resolve) => {
@@ -624,6 +627,8 @@ async function getJDFruit() {
 
   await jdFruit();
 }
+
+// 获取crazyJoy助力码
 async function getJoy(){
   function taskUrl(functionId, body = '') {
     let t = Date.now().toString().substr(0, 10)
@@ -670,6 +675,7 @@ async function getJoy(){
     })
   })
 }
+
 // 年兽
 async function getJdNS() {
 
@@ -687,8 +693,8 @@ async function getJdNS() {
                 data = JSON.parse(data)
                 if (data.data.bizCode === 0) {
                   if (JSON.stringify(body) === '{}') {
+                    console.log(`【账号${$.index}（${$.nickName || $.UserName}）京东年兽】${data.data.result.inviteId}`)
                     let token = data.data.result.inviteId
-                    console.log(`【账号${$.index}（${$.nickName || $.UserName}）京东年兽】${token}`)
                     jdnian.push(token)
                   }
                 }
@@ -1060,6 +1066,48 @@ function taskcashUrl(functionId, body = {}) {
 
   await getUserInfo()
 }
+//闪购盲盒
+async function getSgmh(timeout = 0) {
+  return new Promise((resolve) => {
+    setTimeout( ()=>{
+      let url = {
+        url : `https://api.m.jd.com/client.action`,
+        headers : {
+          'Origin' : `https://h5.m.jd.com`,
+          'Cookie' : cookie,
+          'Connection' : `keep-alive`,
+          'Accept' : `application/json, text/plain, */*`,
+          'Referer' : `https://h5.m.jd.com/babelDiy/Zeus/2WBcKYkn8viyxv7MoKKgfzmu7Dss/index.html`,
+          'Host' : `api.m.jd.com`,
+          'Accept-Encoding' : `gzip, deflate, br`,
+          'Accept-Language' : `zh-cn`
+        },
+        body : `functionId=interact_template_getHomeData&body={"appId":"1EFRRxA","taskToken":""}&client=wh5&clientVersion=1.0.0`
+      }
+
+      $.post(url, async (err, resp, data) => {
+        try {
+          if (safeGet(data)) {
+            data = JSON.parse(data);
+            if (data.data.bizCode === 0) {
+              for (let i = 0; i < data.data.result.taskVos.length; i++) {
+                if (data.data.result.taskVos[i].taskName === '邀人助力任务') {
+                  console.log(`【账号${$.index}（${$.nickName || $.UserName}）闪购盲盒】${data.data.result.taskVos[i].assistTaskDetailVo.taskToken}`)
+                  let token = data.data.result.taskVos[i].assistTaskDetailVo.taskToken
+                  submit_temp_code_sgmh.push(token)
+                }
+              }
+            }
+          }
+        } catch (e) {
+          $.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+      })
+    },timeout)
+  })
+}
 
 // @Turing Lab Bot
 let submit_bean_code = []// 种豆得豆
@@ -1076,13 +1124,14 @@ let jdzz = []// JD赚赚
 let jdnian = []// JD炸年兽
 
 function showFormatMsg() {
-  console.log(`\n========== 【格式化互助码&】 ==========`)
+  console.log(`\n========== 【整理上车互助码】 ==========`)
   console.log(`\n提交机器人 @Turing Lab Bot\n`)
   console.log(`/submit_bean_code ${submit_bean_code.join('&')}\n`)
   console.log(`/submit_farm_code ${submit_farm_code.join('&')}\n`)
   console.log(`/submit_pet_code ${submit_pet_code.join('&')}\n`)
   console.log(`/submit_jxfactory_code ${submit_jxfactory_code.join('&')}\n`)
   console.log(`/submit_ddfactory_code ${submit_ddfactory_code.join('&')}\n`)
+  console.log(`/submit_ddfactory_code sgmh ${submit_temp_code_sgmh.join('&')}\n`)
 
   console.log(`\n提交机器人 @Commit Code Bot\n`)
   console.log(`/jdcash ${jdcash.join('&')}\n`)
@@ -1106,6 +1155,7 @@ async function getShareCodeAndAdd() {
   await getJdNS() // 年兽
   await getJdNH() // 京东年货
   await getJDCash() // 京东签到领现金
+  await getSgmh() // 京东闪购盲盒
   console.log(`======账号${$.index}结束======\n`)
 }
 
