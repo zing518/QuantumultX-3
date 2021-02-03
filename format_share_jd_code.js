@@ -1022,7 +1022,7 @@ async function getJDCash() {
           } else {
             if (safeGet(data)) {
               data = JSON.parse(data)
-              if (data.code === 0 && data.data.result) {
+              if (data.code===0 && data.data.result) {
                 console.log(
                   `【账号${$.index}（${$.nickName || $.UserName}）京东签到领现金】${data.data.result.inviteCode}`
                 )
