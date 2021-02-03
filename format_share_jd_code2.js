@@ -171,7 +171,7 @@ if ($.isNode()) {
       if (!$.isLogin) {
         continue
       }
-      await getShareCode()
+      await getShareCodeAndAdd()
     }
   }
 })()
