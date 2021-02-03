@@ -1013,16 +1013,16 @@ async function getJDCash() {
   const JDCash_API_HOST = 'https://api.m.jd.com/client.action'
 
   function getUserInfo() {
-    return new Promise(resolve => {
-      $.get(taskcashUrl('cash_mob_home'), async (err, resp, data) => {
-        try {
-          if (err) {
-            console.log(`${JSON.stringify(err)}`)
-            console.log(`${$.name} API请求失败，请检查网路重试`)
-          } else {
-            if (safeGet(data)) {
-              data = JSON.parse(data)
-              if (data.code===0 && data.data.result) {
+  return new Promise((resolve) => {
+    $.get(taskUrl("cash_mob_home",), async (err, resp, data) => {
+      try {
+        if (err) {
+          console.log(`${JSON.stringify(err)}`)
+          console.log(`${$.name} API请求失败，请检查网路重试`)
+        } else {
+          if (safeGet(data)) {
+            data = JSON.parse(data);
+            if(data.code===0 && data.data.result){
                 console.log(
                   `【账号${$.index}（${$.nickName || $.UserName}）京东签到领现金】${data.data.result.inviteCode}`
                 )
@@ -1031,10 +1031,10 @@ async function getJDCash() {
               } 
             }
           }
-        } catch (e) {
-          $.logErr(e, resp)
-        } finally {
-          resolve(data)
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve(data);
         }
       })
     })
