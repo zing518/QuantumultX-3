@@ -1023,9 +1023,7 @@ async function getJDCash() {
           if (safeGet(data)) {
             data = JSON.parse(data);
             if(data.code===0 && data.data.result){
-                console.log(
-                  `【账号${$.index}（${$.nickName || $.UserName}）京东签到领现金】${data.data.result.inviteCode}`
-                )
+                console.log(`【账号${$.index}（${$.nickName || $.UserName}）京东签到领现金】${data.data.result.inviteCode}`)
                 let token = data.data.result.inviteCode
                 jdcash.push(token)
               } 
@@ -1040,27 +1038,21 @@ async function getJDCash() {
     })
   }
 
-  function taskcashUrl(functionId, body = {}) {
-    return {
-      url: `${JDCash_API_HOST}?functionId=${functionId}&body=${escape(JSON.stringify(body))}&client=wh5&clientVersion=9.1.0`,
-      headers: {
-        Cookie: cookie,
-        Host: 'api.m.jd.com',
-        Connection: 'keep-alive',
-        'Content-Type': 'application/json',
-        Referer: 'http://wq.jd.com/wxapp/pages/hd-interaction/index/index',
-        'User-Agent': $.isNode()
-          ? process.env.JD_USER_AGENT
-            ? process.env.JD_USER_AGENT
-            : require('./USER_AGENTS').USER_AGENT
-          : $.getdata('JDUA')
-          ? $.getdata('JDUA')
-          : 'jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0',
-        'Accept-Language': 'zh-cn',
-        'Accept-Encoding': 'gzip, deflate, br',
-      },
+function taskcashUrl(functionId, body = {}) {
+  return {
+    url: `${JDCash_API_HOST}?functionId=${functionId}&body=${escape(JSON.stringify(body))}&appid=CashRewardMiniH5Env&appid=9.1.0`,
+    headers: {
+      'Cookie': cookie,
+      'Host': 'api.m.jd.com',
+      'Connection': 'keep-alive',
+      'Content-Type': 'application/json',
+      'Referer': 'http://wq.jd.com/wxapp/pages/hd-interaction/index/index',
+      'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
+      'Accept-Language': 'zh-cn',
+      'Accept-Encoding': 'gzip, deflate, br',
     }
   }
+}
 
   await getUserInfo()
 }
