@@ -747,7 +747,7 @@ async function getJdNH() {
       url: 'https://api.m.jd.com/client.action?functionId=isvObfuscator',
       body:
         'body=%7B%22url%22%3A%22https%3A%5C%2F%5C%2Flzdz-isv.isvjcloud.com%22%2C%22id%22%3A%22%22%7D&build=167490&client=apple&clientVersion=9.3.2&openudid=53f4d9c70c1c81f1c8769d2fe2fef0190a3f60d2&sign=a65279303b19bf51c17e7dbfdea85dd3&st=1610417332632&sv=112',
-      headers: {
+      headers: { 
         Host: 'api.m.jd.com',
         accept: '*/*',
         'user-agent': 'JD4iPhone/167490 (iPhone; iOS 14.2; Scale/3.00)',
@@ -1010,7 +1010,7 @@ async function getJdNH() {
 }
 // jd签到领现金
 async function getJDCase() {
-  const JDZZ_API_HOST = 'https://api.m.jd.com/client.action'
+  const JDCase_API_HOST = 'https://api.m.jd.com/client.action'
 
   function getUserInfo() {
     return new Promise(resolve => {
@@ -1020,8 +1020,6 @@ async function getJDCase() {
             console.log(`${JSON.stringify(err)}`)
             console.log(`${$.name} API请求失败，请检查网路重试`)
           } else {
-            console.log('data')
-            console.log(data)
             if (safeGet(data)) {
               data = JSON.parse(data)
               if (data.code === 0 && data.data.result) {
