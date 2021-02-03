@@ -1087,19 +1087,6 @@ function showFormatMsg() {
   console.log(`/jdzz ${jdzz.join('&')}\n`)
   console.log(`/jdnian ${jdnian.join('&')}\n`)
 
-
-
-  console.log(`\n========== 【格式化互助码@】 ==========`)
-  console.log(`jd_plantBean ${submit_bean_code.join('@')}\n`)
-  console.log(`jd_fruit ${submit_farm_code.join('@')}\n`)
-  console.log(`jd_pet ${submit_pet_code.join('@')}\n`)
-  console.log(`/submit_jxfactory_code ${submit_jxfactory_code.join('@')}\n`)
-  console.log(`/submit_ddfactory_code ${submit_ddfactory_code.join('@')}\n`)
-  console.log(`/jdcash ${jdcash.join('@')}\n`)
-  console.log(`/jdcrazyjoy ${jdcrazyjoy.join('@')}\n`)
-  console.log(`/jdnh ${jdnh.join('@')}\n`)
-  console.log(`/jdzz ${jdzz.join('@')}\n`)
-  console.log(`/jdnian ${jdnian.join('@')}\n`)
 }
 
 async function getShareCodeAndAdd() {
