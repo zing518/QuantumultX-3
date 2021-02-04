@@ -1132,7 +1132,7 @@ function showFormatMsg() {
   console.log(`/submit_pet_code ${submit_pet_code.join('&')}\n`)
   console.log(`/submit_jxfactory_code ${submit_jxfactory_code.join('&')}\n`)
   console.log(`/submit_ddfactory_code ${submit_ddfactory_code.join('&')}\n`)
-  console.log(`/submit_temp_code sgmh ${submit_temp_code_sgmh.join('&')}\n`)
+  console.log(`/submit_temp_code ${submit_temp_code_sgmh.join('&')}\n`)
 
   console.log(`\n提交机器人 @Commit Code Bot\n`)
   console.log(`/jdcash ${jdcash.join('&')}\n`)
