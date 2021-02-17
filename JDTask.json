@@ -68,6 +68,7 @@
         "5 0 10-15 2 * https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_xmf.js, tag=京东小魔方, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
         "0,50 0,9,11,13,15,17,19,20,21,23 8-18 2 * https://raw.githubusercontent.com/i-chenzhe/qx/main/red_rain.js, tag=京东直播雨, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
         "10 10,11 * * 2-5 https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_entertainment.js, tag=百变大咖秀, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
+        "3 10 17-28 2 * https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_walmart.js, tag=沃尔玛互动,  img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
         "0 */3 * * * https://raw.githubusercontent.com/799953468/Quantumult-X/master/Scripts/JD/jd_paopao.js, tag=京东泡泡大战, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_paopao.png, enabled=true",
         "0 * * * * https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js, tag=京喜财富岛, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true",
         "30 6,12,22 * * * https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd_exchange.js, tag=财富岛兑换提醒, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true",
