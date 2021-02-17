@@ -65,7 +65,7 @@
         "30 18 * * * https://raw.githubusercontent.com/whyour/hundun/master/quanx/jd_zjd.js, tag=赚京豆半自动, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_syj.png, enabled=true",
         "10 * * * * https://raw.githubusercontent.com/whyour/hundun/master/quanx/jd_zjd_tuan.js, tag=赚京豆开团, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_syj.png, enabled=true",
         "5 0 10-15 2 * https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_gjmh.js, tag=国际盲盒, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
-        "5 0 10-15 2 * https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_xmf.js, tag=京东小魔方, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
+        "5 0 * * * https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_xmf.js, tag=京东小魔方, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
         "10 10,11 * * 2-5 https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_entertainment.js, tag=百变大咖秀, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
         "3 10 17-28 2 * https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_walmart.js, tag=沃尔玛互动,  img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true",
         "0 */3 * * * https://raw.githubusercontent.com/799953468/Quantumult-X/master/Scripts/JD/jd_paopao.js, tag=京东泡泡大战, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_paopao.png, enabled=true",
