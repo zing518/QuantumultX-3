@@ -80,6 +80,6 @@
         "30 10 * * * https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_try.js, tag=京东试用, img-url=https://raw.githubusercontent.com/ZCY01/img/master/jdtryv1.png, enabled=true",
         "5 0 * * * https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_priceProtect.js, tag=京东价格保护, img-url=https://raw.githubusercontent.com/ZCY01/img/master/pricev1.png, enabled=true",
         "10 0 * * * https://raw.githubusercontent.com/Kyle0816/GDscripts/main/jd_jifen.js, tag=积分加油站, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-        "10 0 * * * https://raw.githubusercontent.com/Kyle0816/GDscripts/main/jd_daydlt.js, tag=天天优惠大乐透, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/d.png, enabled=true",
+        "10 0 * * * https://raw.githubusercontent.com/Kyle0816/GDscripts/main/jd_daydlt.js, tag=天天优惠大乐透, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
     ]
 }
