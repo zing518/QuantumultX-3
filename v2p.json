@@ -86,6 +86,51 @@
       }
     },
     {
+      "name": "泡泡大作战",
+      "type": "cron",
+      "time": "10 5 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/799953468/Quantumult-X/master/Scripts/JD/jd_paopao.js"
+      }
+    },
+    {
+      "name": "西梅",
+      "type": "cron",
+      "time": "10 6 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/age174/-/main/ximei.js"
+      }
+    }, 
+    {
+      "name": "葫芦音乐",
+      "type": "cron",
+      "time": "0,30 8-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/age174/-/main/hlyy.js"
+      }
+    }, 
+    {
+      "name": "步步宝",
+      "type": "cron",
+      "time": "0 8-23/2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/adwktt/adwktt/master/BBB.js"
+      }
+    },
+    {
+      "name": "全民悦动",
+      "type": "cron",
+      "time": "0,30 0-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/qmyd.js"
+      }
+    },
+    {
       "name": "58同城",
       "type": "cron",
       "time": "20 * * * *",
