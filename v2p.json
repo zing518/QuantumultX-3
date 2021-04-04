@@ -5,21 +5,147 @@
   "date": "2021-04-05 0:0:0",
   "list": [
     {
-      "name": "腾讯视频",
+      "name": "bilibili",
       "type": "cron",
       "time": "1 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js"
       }
     },
     {
-      "name": "人人视频",
+      "name": "时光相册",
       "type": "cron",
-      "time": "1 0 * * *",
+      "time": "2 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.js"
+      }
+    },
+    {
+      "name": "欧可林",
+      "type": "cron",
+      "time": "3 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean.js"
+      }
+    },
+    {
+      "name": "饿了么-打卡领红包",
+      "type": "cron",
+      "time": "4 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js"
+      }
+    },
+    {
+      "name": "饿了么",
+      "type": "cron",
+      "time": "5 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js"
+      }
+    },
+    {
+      "name": "航旅纵横",
+      "type": "cron",
+      "time": "6 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js"
+      }
+    },
+    {
+      "name": "爱奇艺",
+      "type": "cron",
+      "time": "7 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
+      }
+    },
+    {
+      "name": "吾爱破解",
+      "type": "cron",
+      "time": "8 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
+      }
+    },
+    {
+      "name": "伊利乳品",
+      "type": "cron",
+      "time": "9 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js"
+      }
+    },
+    {
+      "name": "58同城",
+      "type": "cron",
+      "time": "20 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/photonmang/quantumultX/master/58/58.js"
+      }
+    }, 
+    {
+      "name": "返利网",
+      "type": "cron",
+      "time": "0 10,16,22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/flw.js"
+      }
+    },
+    {
+      "name": "滴滴出行",
+      "type": "cron",
+      "time": "0 1,20,21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js"
+      }
+    },
+    {
+      "name": "中青看点签到&开转盘宝箱&阅读时长",
+      "type": "cron",
+      "time": "0,30 4-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js"
+      }
+    },
+    {
+      "name": "中青看点看看赚&浏览赚",
+      "type": "cron",
+      "time": "10 5,6 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/ztxtop/x/main/youth_banner.js"
+      }
+    },
+    {
+      "name": "腾讯自选股",
+      "type": "cron",
+      "time": "30 16 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js"
+      }
+    },  
+    {
+      "name": "自选股长牛来了",
+      "type": "cron",
+      "time": "30 0,5 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockcow.js"
       }
     }
   ]
