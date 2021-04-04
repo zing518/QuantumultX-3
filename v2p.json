@@ -1,0 +1,26 @@
+{
+  "name": "v2p自用定时任务订阅",
+  "author": "Kyle0816",
+  "desc": "该订阅仅适用于 elecV2P，与其他软件并不兼容。",
+  "date": "2021-04-05 0:0:0",
+  "list": [
+    {
+      "name": "腾讯视频",
+      "type": "cron",
+      "time": "1 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js"
+      }
+    },
+    {
+      "name": "人人视频",
+      "type": "cron",
+      "time": "1 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js"
+      }
+    }
+  ]
+}
