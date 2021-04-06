@@ -1,3 +1,7 @@
+/*
+[task_local]
+20 * * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/zhibojianchoujiang.js, tag=zhibojianchoujiang,  enabled=true
+*/
 const $ = new Env('直播间抽奖（全局）');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [
