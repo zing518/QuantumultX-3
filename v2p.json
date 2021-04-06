@@ -86,6 +86,33 @@
       }
     },
     {
+      "name": "AcFun",
+      "type": "cron",
+      "time": "10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js"
+      }
+    },
+    {
+      "name": "网易云音乐",
+      "type": "cron",
+      "time": "11 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js"
+      }
+    },
+    {
+      "name": "人人视频",
+      "type": "cron",
+      "time": "12 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js"
+      }
+    },
+    {
       "name": "泡泡大作战",
       "type": "cron",
       "time": "10 5 * * *",
@@ -112,6 +139,15 @@
         "target": "https://raw.githubusercontent.com/age174/-/main/hlyy.js"
       }
     }, 
+    {
+      "name": "微客众智",
+      "type": "cron",
+      "time": "25,55 1,5,9-22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/age174/-/main/wkzz.js"
+      }
+    },  
     {
       "name": "步步宝",
       "type": "cron",
