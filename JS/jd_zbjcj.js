@@ -5,6 +5,7 @@
 const $ = new Env('直播间抽奖（全局）');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+let notifyMsg = ''
 let cookiesArr = [
 ], cookie = '', message='';
 if ($.isNode()) {
@@ -53,6 +54,9 @@ function showMsg() {
     }
     $.msg($.name, '', `${message}`);
     resolve()
+    if ($.isNode()) {
+      notifyMsg += `${message}\n\n`;
+    }
   })
 }
 
