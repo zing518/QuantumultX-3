@@ -142,7 +142,7 @@
     {
       "name": "葫芦音乐",
       "type": "cron",
-      "time": "0,30 8-23 * * *",
+      "time": "0,30 6-23 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/age174/-/main/hlyy.js"
