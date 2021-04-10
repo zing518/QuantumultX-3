@@ -185,6 +185,15 @@
       }
     }, 
     {
+      "name": "燃旅视频",
+      "type": "cron",
+      "time": "30 10-20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
+      }
+    },
+    {
       "name": "返利网",
       "type": "cron",
       "time": "0 10,16,22 * * *",
