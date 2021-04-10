@@ -1,24 +1,9 @@
 /*
 华硕-爱奇艺
 活动地址:https://asusiqiyi.m.jd.com/#/
-没有添加助力环节，仅完成可能获得京豆的任务；
-新手写脚本，难免有bug，能用且用。
-非常感谢 lxk0301 大佬的指导，让这个脚本支持了手机端运行。
-
-已支持IOS双京东账号,Node.js支持N个京东账号
-脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
-============Quantumultx===============
 [task_local]
 #华硕-iqiyi
-0 0 5-11 4 * https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js, tag=华硕-iqiyi, enabled=true
-================Loon==============
-[Script]
-cron "0 0 5-11 4 *" script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js,tag=华硕-iqiyi
-===============Surge=================
-华硕-iqiyi = type=cron,cronexp="0 0 5-11 4 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js
-============小火箭=========
-华硕-iqiyi = type=cron,script-path=https://raw.githubusercontent.com/monk-coder/dust/dust/backup/z_asus_iqiyi.js, cronexpr="0 0 5-11 4 *", timeout=3600, enable=true
-
+0 0 5-11 4 * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_hsaqi.js, tag=jd_hsaqi, enabled=true
 */
 // prettier-ignore
 !function (t, r) { "object" == typeof exports ? module.exports = exports = r() : "function" == typeof define && define.amd ? define([], r) : t.CryptoJS = r() }(this, function () {
