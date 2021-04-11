@@ -104,15 +104,6 @@
       }
     },
     {
-      "name": "人人视频",
-      "type": "cron",
-      "time": "12 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js"
-      }
-    },
-    {
       "name": "泡泡大作战",
       "type": "cron",
       "time": "10 5 * * *",
