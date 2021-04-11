@@ -174,15 +174,6 @@
         "type": "runjs",
         "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/qmyd.js"
       }
-    },
-    {
-      "name": "58同城",
-      "type": "cron",
-      "time": "20 * * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/photonmang/quantumultX/master/58/58.js"
-      }
     }, 
     {
       "name": "燃旅视频",
@@ -196,7 +187,7 @@
     {
       "name": "返利网",
       "type": "cron",
-      "time": "0 10,16,22 * * *",
+      "time": "0 10,11,16,22 * * *",
       "job": {
         "type": "runjs",
         "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/flw.js"
