@@ -9,7 +9,7 @@ JD_TRY_MIN_PRICE 最小价格单位
 请配合取关脚本试用，使用 jd_unsubscribe.js 提前取关至少250个商店确保京东试用脚本正常运行。
 [task_local]
 # 京东价格保护
-30 10 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_ttrryy, tag=京东试用, enabled=true
+30 10 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_ttrryy.js, tag=ttrryy, enabled=true
  */
 const $ = new Env("京东试用");
 let cookiesArr = [],
