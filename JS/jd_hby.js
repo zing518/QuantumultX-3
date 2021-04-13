@@ -1,6 +1,6 @@
 /*
 只能用一天。需每天寻找直播抓包
-1 8-23 * * * lxk0301_live_redrain.js
+1 8-23 13 4 * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_hby.js, tag=hongbaoyu, enabled=true
 */
 const $ = new Env('整点京豆雨');
 let allMessage = '';
