@@ -1,6 +1,6 @@
 /*
 [task_local]
-20 11 1-31/3 * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_zbjcj.js, tag=zhibojianchoujiang, enabled=true
+20 11 1-31/7 * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_zbjcj.js, tag=zhibojianchoujiang, enabled=true
 */
 const $ = new Env('直播间抽奖（全局）');
 const notify = $.isNode() ? require('./sendNotify') : '';
