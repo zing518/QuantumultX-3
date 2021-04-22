@@ -1,6 +1,6 @@
 /*
 只能用一天。需每天寻找直播抓包
-1 8-23 * * * lxk0301_live_redrain.js
+0 8-23 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_hby.js, tag=hognbaoyu, enabled=true
 */
 const $ = new Env('整点京豆雨');
 let allMessage = '';
@@ -23,15 +23,15 @@ let ids = {
   '9': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
   '10': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
   '11': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
-  '12': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
-  '13': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
-  '14': 'RRA85AvVYJBvkmwpDhn4Y9cMRXV9mH ',
+  '12': 'RRAzn5yQXcYJFMzyucMtGntDEgQUcV',
+  '13': 'RRA3CMggYFzqDma3Pz9DbPbFPs8unYk',
+  '14': 'RRA85AvVYJBvkmwpDhn4Y9cMRXV9mH',
   '15': 'RRAAYPHu6s5pWzYMqmfNygvvgJTKdq',
   '16': 'RRA2u4bEZ2zLYr9PKfwqfXngbVCmqNE',
   '17': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
   '18': 'RRA4Kr8hch51J49qasBvEv8Agf8chAD',
   '19': 'RRA2dwfH47xq3QNX32mHLGcG4FzBmBa',
-  '20': 'RRA2wKRg7gL9Ns1zqtun1JwkBTZ2yVS',
+  '20': 'RRAKoqJYHaBPhFyuYdunFqtjeVBLDC',
   '21': 'RRA2VFFiPMXaspNre68GLyvRPU1vGxA',
   '22': 'RRA3gsDuBBP5kYqknjTZ2h3VLkEpiT3',
   '23': 'RRA2qAfXJe5iMPfa7f5VCgviBaxjG3D'
