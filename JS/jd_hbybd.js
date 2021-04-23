@@ -4,7 +4,7 @@
 30,31 12-23 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_hbybd.js, tag=bandianhognbaoyu, enabled=true
 */
 
-const $ = new Env('半点红包雨');
+const $ = new Env('自用半点红包雨');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
