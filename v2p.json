@@ -104,15 +104,6 @@
       }
     },
     {
-      "name": "泡泡大作战",
-      "type": "cron",
-      "time": "10 5 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/799953468/Quantumult-X/master/Scripts/JD/jd_paopao.js"
-      }
-    },
-    {
       "name": "西梅",
       "type": "cron",
       "time": "10 6 * * *",
