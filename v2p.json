@@ -124,7 +124,7 @@
     {
       "name": "燃旅视频",
       "type": "cron",
-      "time": "30 10-20 * * *",
+      "time": "20 10-20 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
@@ -187,10 +187,19 @@
     {
       "name": "招招试药",
       "type": "cron",
-      "time": "35 9 * * *",
+      "time": "35 9,15,21 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/age174/-/main/zzsy.js"
+      }
+    },
+    {
+      "name": "左边收宝箱",
+      "type": "cron",
+      "time": "0 0,4,8,12,16,20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/xl2101200/-/main/zb.js"
       }
     },
     {
