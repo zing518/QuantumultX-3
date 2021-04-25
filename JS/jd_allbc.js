@@ -1,7 +1,7 @@
 /*
 [task_local]
 #京东月资产变动通知
-10 7 1-31/7 * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_all_bean_change.js, tag=hognbaoyu, enabled=true
+10 7 1-31/7 * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_allbc.js, tag=yuebiandong, enabled=true
 
  */
 const $ = new Env('京东月资产变动通知');
