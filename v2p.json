@@ -124,7 +124,7 @@
     {
       "name": "燃旅视频",
       "type": "cron",
-      "time": "20 10-20 * * *",
+      "time": "30 10-20 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
@@ -185,24 +185,6 @@
       }
     },
     {
-      "name": "招招试药",
-      "type": "cron",
-      "time": "35 9,15,21 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/age174/-/main/zzsy.js"
-      }
-    },
-    {
-      "name": "左边收宝箱",
-      "type": "cron",
-      "time": "0 0,4,8,12,16,20 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/xl2101200/-/main/zb.js"
-      }
-    },
-    {
       "name": "微客众智",
       "type": "cron",
       "time": "25,55 1,5,9-22 * * *",
@@ -212,21 +194,21 @@
       }
     },
     {
+      "name": "左边收宝箱",
+      "type": "cron",
+      "time": "0 */4 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/xl2101200/-/main/zb.js"
+      }
+    },
+    {
       "name": "京东到家果园任务",
       "type": "cron",
       "time": "0 8,11,16 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/717785320/JDDJ/main/jddj_fruit.js"
-      }
-    },
-    {
-      "name": "京东到家鲜豆任务",
-      "type": "cron",
-      "time": "40 7 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/717785320/JDDJ/main/jddj_bean.js"
+        "target": "https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit.js"
       }
     },
     {
@@ -235,7 +217,7 @@
       "time": "20 7 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/717785320/JDDJ/main/jddj_plantBeans.js"
+        "target": "https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_plantBeans.js"
       }
     },
     {
@@ -244,7 +226,43 @@
       "time": "*/5 * * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/717785320/JDDJ/main/jddj_getPoints.js"
+        "target": "jddj_getPoints.js"
+      }
+    },
+    {
+      "name": "京东到家鲜豆任务",
+      "type": "cron",
+      "time": "40 7 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_bean.js"
+      }
+    },
+    {
+      "name": "京东到家果园水车收水滴",
+      "type": "cron",
+      "time": "*/5 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit_collectWater.js"
+      }
+    },
+    {
+      "name": "京东汽车兑换",
+      "type": "cron",
+      "time": "0,5,10,15,20 0 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_car_exchange.js"
+      }
+    },
+    {
+      "name": "京东宠汪汪积分兑换奖品",
+      "type": "cron",
+      "time": "59 59 23,7,15 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_reward.js"
       }
     }
   ]
