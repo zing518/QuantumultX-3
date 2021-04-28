@@ -11,7 +11,7 @@ let bodyList = {
     body: 'body=%7B%22liveId%22%3A%223689733%22%7D'
   }
 }
-let ids = 'RRA3Mtzw53jy91umGsSFMtnHj8VMtpb';
+let ids = 'RRA4Ky1Dth6fGRWjhc7Ec2bVK2N4xoK';
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
