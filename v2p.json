@@ -264,6 +264,69 @@
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_reward.js"
       }
+    },
+    {
+      "name": "开心花园",
+      "type": "cron",
+      "time": "*/30 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/kxhy.js"
+      }
+    },
+    {
+      "name": "如意花园",
+      "type": "cron",
+      "time": "*/15 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/ryhy.js"
+      }
+    },
+    {
+      "name": "考状元娶老婆",
+      "type": "cron",
+      "time": "10 0-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/age174/-/main/qlp.js"
+      }
+    },
+    {
+      "name": "滴滴喝水赚钱",
+      "type": "cron",
+      "time": "40 8,20,9-19/2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_drink.js"
+      }
+    },
+    {
+      "name": "滴滴早起睡觉",
+      "type": "cron",
+      "time": "1 6,22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_sleep.js"
+      }
+    },
+    {
+      "name": "幸福养鸡场",
+      "type": "cron",
+      "time": "10,20,30 0-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/age174/-/main/xfyjc.js"
+      }
+    },
+    {
+      "name": "柠檬富豪小镇",
+      "type": "cron",
+      "time": "*/10 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "http://nm66.top/fhxz.js"
+      }
     }
   ]
 }
