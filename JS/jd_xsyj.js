@@ -1,10 +1,10 @@
 /*
 [task_local]
-#赚京豆
+#新赚京豆
 10,20,30 7 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_xsyj.js, tag=赚京豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_syj.png, enabled=true
 
  */
-const $ = new Env('赚京豆');
+const $ = new Env('新赚京豆');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
