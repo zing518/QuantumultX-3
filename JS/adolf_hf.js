@@ -1,3 +1,9 @@
+/*
+[task_local]
+#合肥旗舰店开业
+10 7 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/adolf_hf.js, tag=yicixing, enabled=true
+
+ */
 const $ = new Env("合肥旗舰店开业");
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
