@@ -1,9 +1,10 @@
-/**
- 京东健康社区兑换。
- 变量HEALTH_P_NAME
- 0 0 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_health_exchange.js, tag=duihuan, enabled=true
- */
+/*
+[task_local]
+#京东健康社区兑换
+#变量HEALTH_P_NAME
+0 0 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_health_exchange.js, tag=duihuan, enabled=true
 
+*/
 const $ = new Env('健康社区兑换');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
