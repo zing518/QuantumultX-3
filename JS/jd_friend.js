@@ -1,5 +1,6 @@
 /*
 joy总动员
+10 7 * * * https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_friend.js, tag=friend, enabled=true
  */
 const $ = new Env('joy总动员');
 
