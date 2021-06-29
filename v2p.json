@@ -1,10 +1,10 @@
 {
-  "name": "v2p自用定时任务订阅",
-  "author": "Kyle0816",
-  "desc": "该订阅仅适用于 elecV2P，与其他软件并不兼容。",
-  "date": "2021-04-05 0:0:0",
+  "name": "elecV2P 定时任务订阅",
+  "author": "留个名字",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-06-29 18:41:46",
   "list": [
-     {
+    {
       "name": "bilibili",
       "type": "cron",
       "time": "1 0 * * *",
@@ -185,15 +185,6 @@
       }
     },
     {
-      "name": "考状元娶老婆",
-      "type": "cron",
-      "time": "10 0-23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/age174/-/main/qlp.js"
-      }
-    },
-    {
       "name": "滴滴喝水赚钱",
       "type": "cron",
       "time": "40 8,20,9-19/2 * * *",
@@ -214,7 +205,7 @@
     {
       "name": "柠檬富豪小镇",
       "type": "cron",
-      "time": "55 */2 * * *",
+      "time": "*/10 6-12 * * *",
       "job": {
         "type": "runjs",
         "target": "http://nm66.top/fhxz.js"
@@ -226,52 +217,7 @@
       "time": "0 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/ztxtop/x/aa4ddeca813fbf5c231dd4adaec68a7632cb292c/jx_cfdtx.js"
-      }
-    },
-    {
-      "name": "京东到家鲜豆庄园领水滴",
-      "type": "cron",
-      "time": "*/5 * * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_getPoints.js"
-      }
-    },
-    {
-      "name": "京东到家鲜豆庄园",
-      "type": "cron",
-      "time": "10 7 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_plantBeans.js"
-      }
-    },
-    {
-      "name": "京东到家鲜豆任务",
-      "type": "cron",
-      "time": "40 7 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_bean.js"
-      }
-    },
-    {
-      "name": "京东到家果园收水滴",
-      "type": "cron",
-      "time": "*/5 * * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit_collectWater.js"
-      }
-    },
-    {
-      "name": "京东到家果园任务",
-      "type": "cron",
-      "time": "7 0,8,11,17 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit.js"
+        "target": "https://raw.githubusercontent.com/ztxtop/x/aa4ddeca813fbf5c231dd4adaec68a7632cb292c/jx_cfdtx.js"
       }
     },
     {
@@ -280,7 +226,7 @@
       "time": "25 8,11,18 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
+        "target": "https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
       }
     },
     {
@@ -289,7 +235,7 @@
       "time": "*/4 * * * *",
       "job": {
         "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js"
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js"
       }
     },
     {
@@ -317,6 +263,79 @@
       "job": {
         "type": "runjs",
         "target": "youth2.js"
+      }
+    },
+    {
+      "name": "中青转盘xhh",
+      "type": "cron",
+      "time": "15,45 4-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "youth3.js"
+      }
+    },
+    {
+      "name": "华住会签到",
+      "type": "cron",
+      "time": "5 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js"
+      }
+    },
+    {
+      "name": "左边申请试用和众测",
+      "type": "cron",
+      "time": "0 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/xl2101200/-/main/zbsy.js"
+      }
+    },
+    {
+      "name": "更新V2P",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/softupdate.js"
+      },
+      "running": false
+    },
+    {
+      "name": "多看点2姐姐版",
+      "type": "cron",
+      "time": "*/30 */1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/DKDAPP2.0/dkd2.js"
+      }
+    },
+    {
+      "name": "UC小猪姐姐版",
+      "type": "cron",
+      "time": "20 11 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/UCPIG/ucpigapp.js"
+      }
+    },
+    {
+      "name": "互利帮姐姐版",
+      "type": "cron",
+      "time": "0 */8 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/HELPBANG/helpbang.js"
+      }
+    },
+    {
+      "name": "西梅带签到",
+      "type": "cron",
+      "time": "11 8 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/ximei.js"
       }
     }
   ]
