@@ -2,7 +2,7 @@
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
   "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-06-29 18:41:46",
+  "date": "2021-08-23 16:08:27",
   "list": [
     {
       "name": "bilibili",
@@ -10,7 +10,7 @@
       "time": "1 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js"
       }
     },
     {
@@ -19,7 +19,7 @@
       "time": "2 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.js"
       }
     },
     {
@@ -28,7 +28,7 @@
       "time": "3 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean.js"
       }
     },
     {
@@ -37,7 +37,7 @@
       "time": "4 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js"
       }
     },
     {
@@ -46,7 +46,7 @@
       "time": "5 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js"
       }
     },
     {
@@ -55,7 +55,7 @@
       "time": "6 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js"
       }
     },
     {
@@ -64,7 +64,7 @@
       "time": "7 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
       }
     },
     {
@@ -73,7 +73,7 @@
       "time": "8 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
       }
     },
     {
@@ -82,16 +82,7 @@
       "time": "9 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js"
-      }
-    },
-    {
-      "name": "AcFun",
-      "type": "cron",
-      "time": "10 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js"
+        "target": "https://ghproxy.com/ttps://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js"
       }
     },
     {
@@ -100,25 +91,7 @@
       "time": "11 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js"
-      }
-    },
-    {
-      "name": "西梅",
-      "type": "cron",
-      "time": "10 6 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/age174/-/main/ximei.js"
-      }
-    },
-    {
-      "name": "燃旅视频",
-      "type": "cron",
-      "time": "30 10-20 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/ranlv.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js"
       }
     },
     {
@@ -127,25 +100,16 @@
       "time": "0 9,10,11,16,22 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/Kyle0816/AutoSyncScript/ZIYE/Task/flw.js"
-      }
-    },
-    {
-      "name": "滴滴出行",
-      "type": "cron",
-      "time": "0 1,20,21 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Kyle0816/AutoSyncScript/ZIYE/Task/flw.js"
       }
     },
     {
       "name": "中青看点签到&开转盘宝箱&阅读时长",
       "type": "cron",
-      "time": "0,30 4-23 * * *",
+      "time": "1 4-23 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js"
       }
     },
     {
@@ -154,16 +118,7 @@
       "time": "10 5 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js"
-      }
-    },
-    {
-      "name": "腾讯自选股",
-      "type": "cron",
-      "time": "30 16 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js"
       }
     },
     {
@@ -172,52 +127,16 @@
       "time": "30 0,5 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockcow.js"
-      }
-    },
-    {
-      "name": "左边收宝箱",
-      "type": "cron",
-      "time": "0 */4 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/xl2101200/-/main/zb.js"
-      }
-    },
-    {
-      "name": "滴滴喝水赚钱",
-      "type": "cron",
-      "time": "40 8,20,9-19/2 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_drink.js"
-      }
-    },
-    {
-      "name": "滴滴早起睡觉",
-      "type": "cron",
-      "time": "1 6,22 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_sleep.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockcow.js"
       }
     },
     {
       "name": "柠檬富豪小镇",
       "type": "cron",
-      "time": "*/10 6-12 * * *",
+      "time": "*/10 * * * *",
       "job": {
         "type": "runjs",
-        "target": "http://nm66.top/fhxz.js"
-      }
-    },
-    {
-      "name": "京喜财富岛提现并发修改版ztxtop",
-      "type": "cron",
-      "time": "0 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/ztxtop/x/aa4ddeca813fbf5c231dd4adaec68a7632cb292c/jx_cfdtx.js"
+        "target": "http://nm66.top/qlfhxz.js"
       }
     },
     {
@@ -226,8 +145,9 @@
       "time": "25 8,11,18 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
-      }
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/didi_fruit/main/dd_fruit.js"
+      },
+      "running": false
     },
     {
       "name": "书旗小说姐姐版",
@@ -235,13 +155,13 @@
       "time": "*/4 * * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js"
       }
     },
     {
       "name": "中青转盘zy",
       "type": "cron",
-      "time": "5,35 4-23 * * *",
+      "time": "5 4-23 * * *",
       "job": {
         "type": "runjs",
         "target": "youth1.js"
@@ -259,7 +179,7 @@
     {
       "name": "中青转盘xh",
       "type": "cron",
-      "time": "10,40 4-23 * * *",
+      "time": "10 4-23 * * *",
       "job": {
         "type": "runjs",
         "target": "youth2.js"
@@ -268,39 +188,11 @@
     {
       "name": "中青转盘xhh",
       "type": "cron",
-      "time": "15,45 4-23 * * *",
+      "time": "15 4-23 * * *",
       "job": {
         "type": "runjs",
         "target": "youth3.js"
       }
-    },
-    {
-      "name": "华住会签到",
-      "type": "cron",
-      "time": "5 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js"
-      }
-    },
-    {
-      "name": "左边申请试用和众测",
-      "type": "cron",
-      "time": "0 10 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/xl2101200/-/main/zbsy.js"
-      }
-    },
-    {
-      "name": "更新V2P",
-      "type": "schedule",
-      "time": "0",
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/softupdate.js"
-      },
-      "running": false
     },
     {
       "name": "多看点2姐姐版",
@@ -308,7 +200,7 @@
       "time": "*/30 */1 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/DKDAPP2.0/dkd2.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/DKDAPP2.0/dkd2.js"
       }
     },
     {
@@ -317,7 +209,7 @@
       "time": "20 11 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/UCPIG/ucpigapp.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/UCPIG/ucpigapp.js"
       }
     },
     {
@@ -326,16 +218,267 @@
       "time": "0 */8 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/HELPBANG/helpbang.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/HELPBANG/helpbang.js"
       }
     },
     {
-      "name": "西梅带签到",
+      "name": "中青阅读xhh",
       "type": "cron",
-      "time": "11 8 * * *",
+      "time": "15 4,8 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/ximei.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js"
+      }
+    },
+    {
+      "name": "百度极速版",
+      "type": "cron",
+      "time": "0 8-22/2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Sunerts/Script/master/Task/baidu_speed.js"
+      }
+    },
+    {
+      "name": "汽车之家极速版ziye",
+      "type": "cron",
+      "time": "4 */30 6-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Kyle0816/AutoSyncScript/ZIYE/Task/qczjspeed.js"
+      }
+    },
+    {
+      "name": "电视家ziye",
+      "type": "cron",
+      "time": "30 2 6-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Kyle0816/AutoSyncScript/ZIYE/Task/dsj.js"
+      }
+    },
+    {
+      "name": "燃旅ziye",
+      "type": "cron",
+      "time": "3 4-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Kyle0816/AutoSyncScript/ZIYE/Task/rl.js"
+      }
+    },
+    {
+      "name": "快手农场",
+      "type": "cron",
+      "time": "30 8,12,17 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/ks_fruit/main/ks_fruit.js"
+      },
+      "running": false
+    },
+    {
+      "name": "🌟 JDTASK安装",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.install.js"
+      },
+      "running": false
+    },
+    {
+      "name": "🌟手动更新任务列表",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.AUTOTASK.js"
+      },
+      "running": false
+    },
+    {
+      "name": "🌟JDCookie扫码服务",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/getJDCookie.elecV2P.js"
+      },
+      "running": false
+    },
+    {
+      "name": "宠旺旺换豆验证",
+      "type": "cron",
+      "time": "50 7,15,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "RunJDTaskV2P.js -env JDTASK=https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jd_joy_reward_auth.js"
+      }
+    },
+    {
+      "name": "JDModule更新",
+      "type": "cron",
+      "time": "30 30 0-23/8 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.module.js"
+      }
+    },
+    {
+      "name": "JDCookie转换",
+      "type": "cron",
+      "time": "30 30 0-23/1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.cookie.js"
+      }
+    },
+    {
+      "name": "JD账号互助码转换",
+      "type": "cron",
+      "time": "0 30 0-23/6 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.sharecode.js"
+      }
+    },
+    {
+      "name": "宠旺旺换500豆-延时版",
+      "type": "cron",
+      "time": "53-56 59 7,15,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jd_joy_reward2.js -local"
+      }
+    },
+    {
+      "name": "超市换1000豆",
+      "type": "cron",
+      "time": "53 59 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jd_blueCoinFixed.js -local"
+      }
+    },
+    {
+      "name": "汽车换500豆",
+      "type": "cron",
+      "time": "53 59 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jdcar500bean.js -local"
+      }
+    },
+    {
+      "name": "Aaron半点京豆雨",
+      "type": "cron",
+      "time": "30 16-23/1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/JavaScript/master/Task/jd_half_redrain.js"
+      },
+      "running": false
+    },
+    {
+      "name": "Aaron超级直播间盲盒抽京豆",
+      "type": "cron",
+      "time": "1-3 18-20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js"
+      },
+      "running": false
+    },
+    {
+      "name": "Aaron整点京豆雨",
+      "type": "cron",
+      "time": "0 0-23/1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/JavaScript/master/Task/jd_super_redrain.js"
+      },
+      "running": false
+    },
+    {
+      "name": "Aaron超级直播间红包雨",
+      "type": "cron",
+      "time": "0,30 12-23/1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/sync/jd_scripts/jd_live_redrain.js"
+      },
+      "running": false
+    },
+    {
+      "name": "自选股新版",
+      "type": "cron",
+      "time": "30 16 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "txstock1.js"
+      }
+    },
+    {
+      "name": "清空日志",
+      "type": "cron",
+      "time": "58 12,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/deletelog.js"
+      }
+    },
+    {
+      "name": "什么值得买任务",
+      "type": "cron",
+      "time": "20 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js"
+      }
+    },
+    {
+      "name": "什么值得买签到",
+      "type": "cron",
+      "time": "10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js"
+      }
+    },
+    {
+      "name": "联通签到",
+      "type": "cron",
+      "time": "12 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js"
+      }
+    },
+    {
+      "name": "饿了么领取会员任务",
+      "type": "cron",
+      "time": "10 7 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_mission.js"
+      }
+    },
+    {
+      "name": "饿了么领取吃货豆",
+      "type": "cron",
+      "time": "10 0,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js"
+      }
+    },
+    {
+      "name": "贴吧签到",
+      "type": "cron",
+      "time": "20 0,1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js"
       }
     }
   ]
