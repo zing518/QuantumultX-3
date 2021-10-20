@@ -32,27 +32,9 @@
       }
     },
     {
-      "name": "饿了么-打卡领红包",
-      "type": "cron",
-      "time": "4 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js"
-      }
-    },
-    {
-      "name": "饿了么",
-      "type": "cron",
-      "time": "5 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js"
-      }
-    },
-    {
       "name": "航旅纵横",
       "type": "cron",
-      "time": "6 0 * * *",
+      "time": "4 0 * * *",
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js"
@@ -61,7 +43,7 @@
     {
       "name": "爱奇艺",
       "type": "cron",
-      "time": "7 0 * * *",
+      "time": "5 0 * * *",
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
@@ -70,7 +52,7 @@
     {
       "name": "吾爱破解",
       "type": "cron",
-      "time": "8 0 * * *",
+      "time": "6 0 * * *",
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
@@ -79,7 +61,7 @@
     {
       "name": "伊利乳品",
       "type": "cron",
-      "time": "9 0 * * *",
+      "time": "7 0 * * *",
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/ttps://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js"
@@ -88,7 +70,7 @@
     {
       "name": "网易云音乐",
       "type": "cron",
-      "time": "11 0 * * *",
+      "time": "8 0 * * *",
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js"
@@ -130,15 +112,7 @@
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockcow.js"
       }
     },
-    {
-      "name": "柠檬富豪小镇",
-      "type": "cron",
-      "time": "*/10 * * * *",
-      "job": {
-        "type": "runjs",
-        "target": "http://nm66.top/qlfhxz.js"
-      }
-    },
+
     {
       "name": "滴滴免费水果",
       "type": "cron",
@@ -267,158 +241,6 @@
       }
     },
     {
-      "name": "快手农场",
-      "type": "cron",
-      "time": "30 8,12,17 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/passerby-b/ks_fruit/main/ks_fruit.js"
-      },
-      "running": false
-    },
-    {
-      "name": "🌟 JDTASK安装",
-      "type": "schedule",
-      "time": "0",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.install.js"
-      },
-      "running": false
-    },
-    {
-      "name": "🌟手动更新任务列表",
-      "type": "schedule",
-      "time": "0",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.AUTOTASK.js"
-      },
-      "running": false
-    },
-    {
-      "name": "🌟JDCookie扫码服务",
-      "type": "schedule",
-      "time": "0",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/getJDCookie.elecV2P.js"
-      },
-      "running": false
-    },
-    {
-      "name": "宠旺旺换豆验证",
-      "type": "cron",
-      "time": "50 7,15,23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "RunJDTaskV2P.js -env JDTASK=https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jd_joy_reward_auth.js"
-      }
-    },
-    {
-      "name": "JDModule更新",
-      "type": "cron",
-      "time": "30 30 0-23/8 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.module.js"
-      }
-    },
-    {
-      "name": "JDCookie转换",
-      "type": "cron",
-      "time": "30 30 0-23/1 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.cookie.js"
-      }
-    },
-    {
-      "name": "JD账号互助码转换",
-      "type": "cron",
-      "time": "0 30 0-23/6 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDTaskV2P.sharecode.js"
-      }
-    },
-    {
-      "name": "宠旺旺换500豆-延时版",
-      "type": "cron",
-      "time": "53-56 59 7,15,23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jd_joy_reward2.js -local"
-      }
-    },
-    {
-      "name": "超市换1000豆",
-      "type": "cron",
-      "time": "53 59 23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jd_blueCoinFixed.js -local"
-      }
-    },
-    {
-      "name": "汽车换500豆",
-      "type": "cron",
-      "time": "53 59 23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/CenBoMin/JDTASK_V2P/main/JDScriptsBak/jdcar500bean.js -local"
-      }
-    },
-    {
-      "name": "Aaron半点京豆雨",
-      "type": "cron",
-      "time": "30 16-23/1 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/JavaScript/master/Task/jd_half_redrain.js"
-      },
-      "running": false
-    },
-    {
-      "name": "Aaron超级直播间盲盒抽京豆",
-      "type": "cron",
-      "time": "1-3 18-20 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js"
-      },
-      "running": false
-    },
-    {
-      "name": "Aaron整点京豆雨",
-      "type": "cron",
-      "time": "0 0-23/1 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/JavaScript/master/Task/jd_super_redrain.js"
-      },
-      "running": false
-    },
-    {
-      "name": "Aaron超级直播间红包雨",
-      "type": "cron",
-      "time": "0,30 12-23/1 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontents.com/Aaron-lv/sync/jd_scripts/jd_live_redrain.js"
-      },
-      "running": false
-    },
-    {
-      "name": "自选股新版",
-      "type": "cron",
-      "time": "30 16 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "txstock1.js"
-      }
-    },
-    {
       "name": "清空日志",
       "type": "cron",
       "time": "58 12,23 * * *",
@@ -443,15 +265,6 @@
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js"
-      }
-    },
-    {
-      "name": "联通签到",
-      "type": "cron",
-      "time": "12 0 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js"
       }
     },
     {
