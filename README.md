@@ -2,12 +2,9 @@
 
 
 特别感谢：
-* [@lxk0301](https://github.com/yangtingxiao) 
 * [@whyour](https://github.com/whyour/hundun)
 * [@yangtingxiao](https://github.com/yangtingxiao) 
-* [@799953468](https://github.com/799953468/Quantumult-X)
-* [@MoPoQAQ](https://github.com/MoPoQAQ/Script)
-* [@Sunert](https://github.com/Sunert/Scripts)
+* [@Sunert](https://github.com/Sunert/Script)
 * [@id77](https://github.com/id77/QuantumultX)
 * [@Orz-3](https://github.com/Orz-3)
 * [@58xinian](https://github.com/58xinian/icon)
