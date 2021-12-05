@@ -2,7 +2,7 @@
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
   "note": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-11-28 09:01:54",
+  "date": "2021-12-05 16:26:59",
   "type": "task",
   "list": [
     {
@@ -102,7 +102,7 @@
       "running": true,
       "job": {
         "type": "runjs",
-        "target": "youth_iphoneX.js"
+        "target": "youth_iphonex.js"
       }
     },
     {
@@ -112,7 +112,7 @@
       "running": true,
       "job": {
         "type": "runjs",
-        "target": "youth_gain_iphoneX.js"
+        "target": "youth_gain_iphonex.js"
       }
     },
     {
@@ -196,26 +196,6 @@
       }
     },
     {
-      "name": "自选股",
-      "type": "cron",
-      "time": "20 16 * * *",
-      "running": false,
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js"
-      }
-    },
-    {
-      "name": "多看点2姐姐版",
-      "type": "cron",
-      "time": "*/30 * * * *",
-      "running": true,
-      "job": {
-        "type": "runjs",
-        "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/DKDAPP2.0/dkd2.js"
-      }
-    },
-    {
       "name": "书旗小说姐姐版",
       "type": "cron",
       "time": "*/4 4-23 * * *",
@@ -243,16 +223,6 @@
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/YaphetS0903/JStest/main/flg.js"
-      }
-    },
-    {
-      "name": "趣看行情",
-      "type": "cron",
-      "time": "4 6-16/1 * * *",
-      "running": false,
-      "job": {
-        "type": "runjs",
-        "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js"
       }
     },
     {
@@ -306,16 +276,6 @@
       }
     },
     {
-      "name": "聚看点",
-      "type": "cron",
-      "time": "20 5-23 * * *",
-      "running": true,
-      "job": {
-        "type": "runjs",
-        "target": "http://47.101.146.160/scripts/jkd.js"
-      }
-    },
-    {
       "name": "全球购骑士特权",
       "type": "cron",
       "time": "3 5-23 * * *",
@@ -323,16 +283,6 @@
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js"
-      }
-    },
-    {
-      "name": "抖音极速版",
-      "type": "cron",
-      "time": "*/20 8-18 * * *",
-      "running": false,
-      "job": {
-        "type": "runjs",
-        "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js"
       }
     },
     {
@@ -346,16 +296,6 @@
       }
     },
     {
-      "name": "果冻宝盒",
-      "type": "cron",
-      "time": "10 8 * * *",
-      "running": true,
-      "job": {
-        "type": "runjs",
-        "target": "https://gitee.com/gossh520/script/raw/master/gdbhapp.js"
-      }
-    },
-    {
       "name": "饿了么任务",
       "type": "cron",
       "time": "10 8 * * *",
@@ -363,6 +303,46 @@
       "job": {
         "type": "runjs",
         "target": "https://gitee.com/xiecoll/radish-script/raw/master/ELM/lb_elm.js"
+      }
+    },
+    {
+      "name": "软更新升级",
+      "type": "cron",
+      "time": "30 58 21 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/softupdate.js"
+      }
+    },
+    {
+      "name": "可达鸭",
+      "type": "cron",
+      "time": "*/10 * * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/jjkdy.js"
+      }
+    },
+    {
+      "name": "贴吧签到",
+      "type": "cron",
+      "time": "8 0,2 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js"
+      }
+    },
+    {
+      "name": "趣红包视频",
+      "type": "cron",
+      "time": "5,35 8-22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js"
       }
     }
   ]
