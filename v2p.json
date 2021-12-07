@@ -2,7 +2,7 @@
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
   "note": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-12-05 16:26:59",
+  "date": "2021-12-07 20:39:38",
   "type": "task",
   "list": [
     {
@@ -189,7 +189,7 @@
       "name": "自选股长牛来了",
       "type": "cron",
       "time": "30 0,5 * * *",
-      "running": true,
+      "running": false,
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockcow.js"
@@ -318,7 +318,7 @@
     {
       "name": "可达鸭",
       "type": "cron",
-      "time": "*/10 * * * *",
+      "time": "*/10 4-23 * * *",
       "running": true,
       "job": {
         "type": "runjs",
@@ -343,6 +343,16 @@
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js"
+      }
+    },
+    {
+      "name": "闻多多",
+      "type": "cron",
+      "time": "0-59/15 8-23 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ydd.js"
       }
     }
   ]
