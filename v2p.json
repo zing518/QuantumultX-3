@@ -2,7 +2,7 @@
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
   "note": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-12-07 20:39:38",
+  "date": "2021-12-12 18:35:03",
   "type": "task",
   "list": [
     {
@@ -199,7 +199,7 @@
       "name": "书旗小说姐姐版",
       "type": "cron",
       "time": "*/4 4-23 * * *",
-      "running": true,
+      "running": false,
       "job": {
         "type": "runjs",
         "target": "https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/shuqi.js"
@@ -218,7 +218,7 @@
     {
       "name": "返利购",
       "type": "cron",
-      "time": "0 8 * * *",
+      "time": "0 8,10 * * *",
       "running": true,
       "job": {
         "type": "runjs",
@@ -252,7 +252,7 @@
       "running": true,
       "job": {
         "type": "runjs",
-        "target": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js"
+        "target": "sjb.js"
       }
     },
     {
@@ -316,16 +316,6 @@
       }
     },
     {
-      "name": "可达鸭",
-      "type": "cron",
-      "time": "*/10 4-23 * * *",
-      "running": true,
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/jjkdy.js"
-      }
-    },
-    {
       "name": "贴吧签到",
       "type": "cron",
       "time": "8 0,2 * * *",
@@ -346,13 +336,33 @@
       }
     },
     {
-      "name": "闻多多",
+      "name": "快手极速版",
       "type": "cron",
-      "time": "0-59/15 8-23 * * *",
+      "time": "10 8-18 * * *",
       "running": true,
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ydd.js"
+        "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js"
+      }
+    },
+    {
+      "name": "时光相册qiqi",
+      "type": "cron",
+      "time": "3 0 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "everphoto1.js"
+      }
+    },
+    {
+      "name": "中青阅读qiqi",
+      "type": "cron",
+      "time": "0 4-23 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "youth_qiqi.js"
       }
     }
   ]
