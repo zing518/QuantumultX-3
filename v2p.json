@@ -2,7 +2,7 @@
   "name": "elecV2P 定时任务订阅",
   "author": "留个名字",
   "note": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
-  "date": "2021-12-12 18:35:03",
+  "date": "2021-12-12 18:48:10",
   "type": "task",
   "list": [
     {
@@ -363,6 +363,16 @@
       "job": {
         "type": "runjs",
         "target": "youth_qiqi.js"
+      }
+    },
+    {
+      "name": "得间小说",
+      "type": "cron",
+      "time": "45 6-23 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js"
       }
     }
   ]
