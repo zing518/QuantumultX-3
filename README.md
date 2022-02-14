@@ -1,15 +1,5 @@
 自用
 
-
-特别感谢：
-* [@whyour](https://github.com/whyour/hundun)
-* [@yangtingxiao](https://github.com/yangtingxiao) 
-* [@Sunert](https://github.com/Sunert/Script)
-* [@id77](https://github.com/id77/QuantumultX)
-* [@Orz-3](https://github.com/Orz-3)
-* [@58xinian](https://github.com/58xinian/icon)
-
-
 ⚠️免责声明：
 
 1. 此仓储脚本仅用于学习研究，不保证其合法性、准确性、有效性，请根据情况自行判断，本人对此不承担任何保证责任。
