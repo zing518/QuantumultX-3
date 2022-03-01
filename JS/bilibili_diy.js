@@ -96,7 +96,7 @@ if (magicJS.read(blackKey)) {
           // 107 概念版游戏中心，获取修改为Story模式
           const topList = new Set([176, 107]);
           // 102 开始为概念版id
-          const bottomList = new Set([177, 178, 181, 102, 103, 104, 105, 106, 486, 488, 489]);
+          const bottomList = new Set([178, 179, 181, 102, 103, 104, 105, 106, 486, 488, 489]);
           let obj = JSON.parse(magicJS.response.body);
           if (obj["data"]["tab"]) {
             let tab = obj["data"]["tab"].filter((e) => {
@@ -153,12 +153,6 @@ if (magicJS.read(blackKey)) {
             delete obj["data"]["sections_v2"][index].be_up_title;
             delete obj["data"]["sections_v2"][index].tip_icon;
             delete obj["data"]["sections_v2"][index].tip_title;
-            //2022-02-16 add by ddgksf2013
-            for (let ii = 0; ii < obj["data"]["sections_v2"].length; ii++) {
-              if(obj.data.sections_v2[ii].title=='推荐服务'){
-                obj.data.sections_v2[ii].items[0].title='个性装扮';
-                obj.data.sections_v2[ii].items[1].title='我的钱包';
-              }
             }
             
             delete obj.data.vip_section_v2;
