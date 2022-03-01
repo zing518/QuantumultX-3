@@ -92,11 +92,11 @@ if (magicJS.read(blackKey)) {
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try {
           // 442 开始为概念版id 适配港澳台代理模式
-          const tabList = new Set([40, 774, 857, 545, 151, 442, 99, 100, 101, 554, 556]);
+          const tabList = new Set([39, 40, 774, 857, 545, 151, 442, 99, 100, 101, 554, 556]);
           // 107 概念版游戏中心，获取修改为Story模式
           const topList = new Set([176, 107]);
           // 102 开始为概念版id
-          const bottomList = new Set([177, 178, 179, 181, 102, 103, 104, 105, 106, 486, 488, 489]);
+          const bottomList = new Set([177, 178, 179, 180, 181, 102, 103, 104, 105, 106, 486, 488, 489]);
           let obj = JSON.parse(magicJS.response.body);
           if (obj["data"]["tab"]) {
             let tab = obj["data"]["tab"].filter((e) => {
@@ -156,8 +156,8 @@ if (magicJS.read(blackKey)) {
             //2022-02-16 add by ddgksf2013
             for (let ii = 0; ii < obj["data"]["sections_v2"].length; ii++) {
               if(obj.data.sections_v2[ii].title=='推荐服务'){
-                obj.data.sections_v2[ii].items[0].title='公眾號';
-                obj.data.sections_v2[ii].items[1].title='墨魚手記';
+                obj.data.sections_v2[ii].items[0].title='个性装扮';
+                obj.data.sections_v2[ii].items[1].title='我的钱包';
               }
             }
             
