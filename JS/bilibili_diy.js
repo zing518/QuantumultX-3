@@ -2,7 +2,7 @@
 應用名稱：自用B站去广告脚本
 腳本作者：Cuttlefish
 微信賬號：公眾號墨魚手記
-更新時間：2022-03-01
+更新時間：2022-03-05
 通知頻道：https://t.me/ddgksf2021
 問題反饋：https://t.me/ddgksf2013_bot
 */
@@ -156,8 +156,8 @@ if (magicJS.read(blackKey)) {
             //2022-02-16 add by ddgksf2013
             for (let ii = 0; ii < obj["data"]["sections_v2"].length; ii++) {
               if(obj.data.sections_v2[ii].title=='推荐服务'){
-                obj.data.sections_v2[ii].items[0].title='个性装扮';
-                obj.data.sections_v2[ii].items[1].title='我的钱包';
+                obj.data.sections_v2[ii].items[0].title='公眾號';
+                obj.data.sections_v2[ii].items[1].title='墨魚手記';
               }
             }      
             delete obj.data.vip_section_v2;
@@ -198,7 +198,7 @@ if (magicJS.read(blackKey)) {
           magicJS.logError(`热搜去广告出现异常：${err}`);
         }
         break;
-        //1080P 2022-03-05 add by ddgksf2013
+        //2022-03-05 add by ddgksf2013
         case /https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?/.test(magicJS.request.url):
         try {
           let obj = JSON.parse(magicJS.response.body);
@@ -250,7 +250,8 @@ if (magicJS.read(blackKey)) {
         try {
           let obj = JSON.parse(magicJS.response.body);
           if (obj && obj.hasOwnProperty("data")) {
-            obj["data"]["common_equip"] = {};
+            //obj["data"]["common_equip"] = {};
+            obj["data"]["common_equip"]["package_url"] = "";
           }
           body = JSON.stringify(obj);
         } catch (err) {
