@@ -156,8 +156,8 @@ if (magicJS.read(blackKey)) {
             //2022-02-16 add by ddgksf2013
             for (let ii = 0; ii < obj["data"]["sections_v2"].length; ii++) {
               if(obj.data.sections_v2[ii].title=='推荐服务'){
-                obj.data.sections_v2[ii].items[0].title='公眾號';
-                obj.data.sections_v2[ii].items[1].title='墨魚手記';
+                obj.data.sections_v2[ii].items[0].title='个性装扮';
+                obj.data.sections_v2[ii].items[1].title='我的钱包';
               }
             }      
             delete obj.data.vip_section_v2;
