@@ -2,7 +2,8 @@
 應用名稱：自用B站去广告脚本
 腳本作者：Cuttlefish
 微信賬號：公眾號墨魚手記
-更新時間：2022-03-13
+更新時間：2022-03-14
+腳本版本：1.0.10
 通知頻道：https://t.me/ddgksf2021
 問題反饋：https://t.me/ddgksf2013_bot
 */
@@ -161,10 +162,10 @@ if (magicJS.read(blackKey)) {
               }
               if(obj.data.sections_v2[ii].title=='更多服務'||obj.data.sections_v2[ii].title=='更多服务'){
                   if(obj.data.sections_v2[ii].items[0].id==500){
-                      obj.data.sections_v2[ii].items[0].title='公眾號';
+                      obj.data.sections_v2[ii].items[0].title='联系客服';
                   }
                   if(obj.data.sections_v2[ii].items[1].id==501){
-                      obj.data.sections_v2[ii].items[1].title='墨魚手記';
+                      obj.data.sections_v2[ii].items[1].title='设置';
                   }
               }
               if(obj.data.sections_v2[ii].title=='创作中心'||obj.data.sections_v2[ii].title=='創作中心'){
@@ -233,12 +234,17 @@ if (magicJS.read(blackKey)) {
       // 追番去广告
       case /^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi/.test(magicJS.request.url):
         try {
-          //let obj = JSON.parse(magicJS.response.body);
-          //for (let card of obj.data.cards) {
-            //delete card["extra"];
-          //}
-          //delete obj["data"]["attentions"];
-          //body = JSON.stringify(obj);
+          let obj = JSON.parse(magicJS.response.body);
+          obj.result.modules.forEach((module) => {
+            // 头部banner
+            if (module.style.startsWith("banner")) {
+              module.items = module.items.filter((i) => !(i.source_content && i.source_content.ad_content));
+            }
+            if (module.style.startsWith("tip")) {
+              module.items = null;
+            }
+          });
+          body = JSON.stringify(obj);
         } catch (err) {
           magicJS.logError(`追番去广告出现异常：${err}`);
         }
@@ -269,7 +275,6 @@ if (magicJS.read(blackKey)) {
         try {
           let obj = JSON.parse(magicJS.response.body);
           if (obj && obj.hasOwnProperty("data")&&obj.data.hasOwnProperty("common_equip")&&obj.data.common_equip.hasOwnProperty("package_url")) {
-            //obj["data"]["common_equip"] = {};
             //obj["data"]["common_equip"]["package_url"] = "";
           }
           body = JSON.stringify(obj);
@@ -282,11 +287,11 @@ if (magicJS.read(blackKey)) {
         try {
           let obj = JSON.parse(magicJS.response.body);
           for (let item of obj["data"]["list"]) {
-    item["duration"] = 0;  // 显示时间
-    // 2040 年
-    item["begin_time"] = 2240150400;
-    item["end_time"] = 2240150400;
-}
+              item["duration"] = 0;  // 显示时间
+              // 2040 年
+              item["begin_time"] = 2240150400;
+              item["end_time"] = 2240150400;
+          }
           body = JSON.stringify(obj);
         } catch (err) {
           magicJS.logError(`开屏广告（预加载）出现异常：${err}`);
