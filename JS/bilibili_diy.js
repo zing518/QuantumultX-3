@@ -3,7 +3,7 @@
 腳本作者：Cuttlefish
 微信賬號：公眾號墨魚手記
 更新時間：2022-03-14
-腳本版本：1.0.10
+腳本版本：1.0.15
 通知頻道：https://t.me/ddgksf2021
 問題反饋：https://t.me/ddgksf2013_bot
 */
@@ -72,31 +72,15 @@ if (magicJS.read(blackKey)) {
           magicJS.logError(`记录Story的aid出现异常：${err}`);
         }
         break;
-      // 开屏广告处理
-      case /^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list/.test(magicJS.request.url):
-        try {
-          let obj = JSON.parse(magicJS.response.body);
-          obj["data"]["max_time"] = 0;
-          obj["data"]["min_interval"] = 31536000;
-          obj["data"]["pull_interval"] = 31536000;
-          for (let i = 0; i < obj["data"]["list"].length; i++) {
-            obj["data"]["list"][i]["duration"] = 0;
-            obj["data"]["list"][i]["begin_time"] = 1915027200;
-            obj["data"]["list"][i]["end_time"] = 1924272000;
-          }
-          body = JSON.stringify(obj);
-        } catch (err) {
-          magicJS.logError(`开屏广告处理出现异常：${err}`);
-        }
-        break;
+      
       // 标签页处理，如去除会员购等等
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try {
-          // 442 开始为概念版id 适配港澳台代理模式
+          
           const tabList = new Set([39, 40, 41, 774, 857, 545, 151, 442, 99, 100, 101, 554, 556]);
-          // 107 概念版游戏中心，获取修改为Story模式
+          
           const topList = new Set([176, 107]);
-          // 102 开始为概念版id
+          
           const bottomList = new Set([177, 178, 179, 181, 102,  104, 106, 486, 488, 489]);
           let obj = JSON.parse(magicJS.response.body);
           if (obj["data"]["tab"]) {
@@ -137,8 +121,7 @@ if (magicJS.read(blackKey)) {
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
         try {
           let obj = JSON.parse(magicJS.response.body);
-          // 622 为会员购中心, 425 开始为概念版id
-          //const itemList = new Set([396, 397, 398, 399, 171, 402, 404, 544, 407, 410]);
+          
           const itemList = new Set([396, 397, 398, 399, 402, 404, 407, 410, 425, 426, 427, 428, 430, 432, 433, 434, 494, 495, 496, 497, 500, 501]);
           obj["data"]["sections_v2"].forEach((element, index) => {
             element["items"].forEach((e) => {
@@ -249,6 +232,24 @@ if (magicJS.read(blackKey)) {
           magicJS.logError(`追番去广告出现异常：${err}`);
         }
         break;
+        // 观影页去广告
+      case /https?:\/\/api\.bilibili\.com\/pgc\/page\/cinema\/tab\?/.test(magicJS.request.url):
+        try {
+          let obj = JSON.parse(magicJS.response.body);
+          obj.result.modules.forEach((module) => {
+            // 头部banner
+            if (module.style.startsWith("banner")) {
+              module.items = module.items.filter((i) => !(i.link.indexOf("play")==-1));
+            }
+            if (module.style.startsWith("tip")) {
+              module.items = null;
+            }
+          });
+          body = JSON.stringify(obj);
+        } catch (err) {
+          magicJS.logError(`观影页去广告出现异常：${err}`);
+        }
+        break;
       // 动态去广告
       case /^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?/.test(magicJS.request.url):
         try {
@@ -286,11 +287,13 @@ if (magicJS.read(blackKey)) {
       case /^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list/.test(magicJS.request.url):
         try {
           let obj = JSON.parse(magicJS.response.body);
+          if(obj.data){
           for (let item of obj["data"]["list"]) {
               item["duration"] = 0;  // 显示时间
               // 2040 年
               item["begin_time"] = 2240150400;
               item["end_time"] = 2240150400;
+          }
           }
           body = JSON.stringify(obj);
         } catch (err) {
