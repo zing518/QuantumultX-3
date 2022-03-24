@@ -77,7 +77,7 @@ if (magicJS.read(blackKey)) {
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try {
           
-          const tabList = new Set([39, 40, 41, 774, 857, 545, 151, 442, 99, 100, 101, 554, 556]);
+          const tabList = new Set([39, 40, 41, 42, 774, 857, 545, 151, 442, 99, 100, 101, 554, 556]);
           
           const topList = new Set([176, 107]);
           
