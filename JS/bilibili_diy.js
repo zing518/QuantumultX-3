@@ -2,10 +2,10 @@
 應用名稱：自用B站去广告脚本
 腳本作者：Cuttlefish
 微信賬號：公眾號墨魚手記
-更新時間：2022-03-31
-腳本版本：(55)
+更新時間：2022-05-04
+腳本版本：(58)
 通知頻道：https://t.me/ddgksf2021
-問題反饋：https://t.me/ddgksf2013_bot
+問題反饋：ddgksf2013@163.com
 */
 const scriptName = "BiliBili";
 const storyAidKey = "bilibili_story_aid";
@@ -221,7 +221,11 @@ if (magicJS.read(blackKey)) {
           obj.result.modules.forEach((module) => {
             // 头部banner
             if (module.style.startsWith("banner")) {
-              module.items = module.items.filter((i) => !(i.source_content && i.source_content.ad_content));
+              //i.source_content && i.source_content.ad_content
+              module.items = module.items.filter((i) => !(i.link.indexOf("play")==-1));
+            }
+            if (module.style.startsWith("function")) {
+              module.items = module.items.filter((i) => (i.blink.indexOf("www.bilibili.com")==-1));
             }
             if (module.style.startsWith("tip")) {
               module.items = null;
