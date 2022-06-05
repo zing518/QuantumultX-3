@@ -251,6 +251,9 @@ if (magicJS.read(blackKey)) {
             if (module.style.startsWith("banner")) {
               module.items = module.items.filter((i) => !(i.link.indexOf("play")==-1));
             }
+            if (module.style.startsWith("function")) {
+              module.items = module.items.filter((i) => (i.blink.indexOf("www.bilibili.com")==-1));
+            }
             if (module.style.startsWith("tip")) {
               module.items = null;
             }
