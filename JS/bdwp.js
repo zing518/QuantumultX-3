@@ -1,8 +1,8 @@
 /******************************
 
 [rewrite_local]
-# > 度盘倍速 by ddgksf2013
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
+# 度盘倍速
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/bdwp.js
 [mitm] 
 hostname = pan.baidu.com
 
