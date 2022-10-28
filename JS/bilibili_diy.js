@@ -162,6 +162,7 @@ if (magicJS.read(blackKey)) {
                   delete obj.data.sections_v2[ii].title;
                   delete obj.data.sections_v2[ii].type;
               }
+              
             }      
             delete obj.data.vip_section_v2;
             delete obj.data.vip_section;
