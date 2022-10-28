@@ -2,7 +2,7 @@
 
 [rewrite_local]
 # 度盘倍速
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/bdwp.js
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/bdwpbs.js
 [mitm] 
 hostname = pan.baidu.com
 
