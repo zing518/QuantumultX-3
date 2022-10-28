@@ -2,8 +2,8 @@
 应用名称：自用B站去广告脚本
 脚本作者：Cuttlefish
 微信账号：公众号墨鱼手记
-更新时间：2022-08-21
-脚本版本：(68)
+更新时间：2022-10-11
+脚本版本：(69)
 通知频道：https://t.me/ddgksf2021
 问题反馈：ddgksf2013@163.com
 */
@@ -198,10 +198,11 @@ if (magicJS.read(blackKey)) {
         case /^https?:\/\/app\.bilibili\.com\/x\/v2\/search\/square/.test(magicJS.request.url):
         try {
           let obj = JSON.parse(magicJS.response.body);
-          if(obj.data.length>=3){
-          delete obj.data[0];
-          delete obj.data[2];
-          }
+          obj.data={
+      "type": "history",
+      "title": "搜索历史",
+      "search_hotword_revision": 2
+    };
           body = JSON.stringify(obj);
         } catch (err) {
           magicJS.logError(`热搜去广告出现异常：${err}`);
